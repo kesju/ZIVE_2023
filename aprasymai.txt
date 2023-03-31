@@ -1,0 +1,19 @@
+tvarkymas_perrasymas.ipynb
+# Iš duomenų aplanko, kuriame yra atsisiųsti įrašai iš Zive serverio,
+# atrnkami duomenys iš dviejų Excel sąrašų: vienas su rpeak sutampančiais,
+# kitas - su nesutampančiais. Atrenkami tik tie įrašai, prie kurių pažymėta 
+# įrašo kokybė. Taip pat pasiimama informacija apie userId, recordingId,
+# comments. Tuo pagrindu suformuojama papildoma informacija faile comments_new.csv.
+# Skriptas atrinktus duomenis ir suformuotą comments_new.csv perrašo į aplanką rec_dir_target  
+# Šie duomenys naudojami Makete list.json formavimui ir darbui su duomenimis.
+
+
+grupavimas_i_pacientus.ipynb
+# Grupuojami Zive ekg įrašai į to paties paciento grupes
+# Galima keisti if timediff > timedelta(hours=24) hours = 24, gausime kitą suskirstymą.
+# Sugrupuotų įrašų sąrašas pacientai.json įrašomas į aplanką rec_dir_target.
+# Testinėje dalyje nuskaito failą pacientai.json ir išveda apibendrintą informaciją.
+
+
+mit2zive_pertvarkymas.ipynb
+# Skriptas pertvarko MIT duomenis į tinkamus peržiūrai su MAKETU.
